@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.to_doappinkotlin.BlankFragment"
+        android:name="com.example.to_doappinkotlin.fragments.add.AddFragment"
         android:label="fragment_blank"
         tools:layout="@layout/fragment_blank" >
         <action
