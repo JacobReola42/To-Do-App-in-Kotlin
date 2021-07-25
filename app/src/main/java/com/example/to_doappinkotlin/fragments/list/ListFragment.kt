@@ -27,12 +27,10 @@ class ListFragment : Fragment() {
             findNavController().navigate(R.id.action_listFragment_to_updateFragment)
         }
 
-        // Set Menu
+        // Turn Set Menu On
         setHasOptionsMenu(true)
 
         return binding.root
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
