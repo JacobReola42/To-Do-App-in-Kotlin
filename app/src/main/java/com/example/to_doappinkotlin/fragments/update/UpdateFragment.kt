@@ -1,20 +1,30 @@
 package com.example.to_doappinkotlin.fragments.update
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.example.to_doappinkotlin.R
+import com.example.to_doappinkotlin.databinding.FragmentUpdateBinding
 
 class UpdateFragment : Fragment() {
+
+    private lateinit var binding: FragmentUpdateBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_update, container, false)
+        binding = FragmentUpdateBinding.inflate(layoutInflater, container, false)
+
+        // Set Menu
+        setHasOptionsMenu(true)
+
+        return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.update_fragment_menu, menu)
     }
 
 }
