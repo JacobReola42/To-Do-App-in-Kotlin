@@ -2,6 +2,7 @@ package com.example.to_doappinkotlin.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.to_doappinkotlin.data.models.Priority
 
 @Entity(tableName = "todo_table")
 data class ToDoData (
@@ -9,6 +10,7 @@ data class ToDoData (
     @PrimaryKey(autoGenerate = true)
     var id: Int,
     var title: String,
+    // linked with Converter.kt
     var priority: Priority,
     var description: String
 )

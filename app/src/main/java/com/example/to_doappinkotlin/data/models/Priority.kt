@@ -1,4 +1,4 @@
-package com.example.to_doappinkotlin.data
+package com.example.to_doappinkotlin.data.models
 
 enum class Priority {
 

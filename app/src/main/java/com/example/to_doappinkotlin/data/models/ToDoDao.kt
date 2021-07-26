@@ -1,7 +1,8 @@
-package com.example.to_doappinkotlin.data
+package com.example.to_doappinkotlin.data.models
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.example.to_doappinkotlin.data.ToDoData
 
 // for ROOM to identify DAO
 @Dao
