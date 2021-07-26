@@ -1,4 +1,6 @@
-package com.example.to_doappinkotlin.data
+// Dao Database
+
+package com.example.to_doappinkotlin.data.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
