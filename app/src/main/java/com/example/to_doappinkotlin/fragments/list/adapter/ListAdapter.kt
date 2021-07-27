@@ -1,4 +1,4 @@
-package com.example.to_doappinkotlin.fragments.list
+package com.example.to_doappinkotlin.fragments.list.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
