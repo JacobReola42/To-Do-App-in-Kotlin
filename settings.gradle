@@ -1,2 +1,3 @@
-rootProject.name = "To-Do App In Kotlin"
 include ':app'
+rootProject.name = "To-Do App In Kotlin"
+
