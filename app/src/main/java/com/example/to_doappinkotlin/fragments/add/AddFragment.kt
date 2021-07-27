@@ -33,7 +33,7 @@ class AddFragment : Fragment() {
         // Set Menu
         setHasOptionsMenu(true)
 
-        // Spinner Item Selected Listener
+        // Spinner Item Selected Listener, linked from SharedViewModel.kt
         binding.prioritiesSpinner.onItemSelectedListener = mSharedViewModel.listener
 
         return binding.root
@@ -65,7 +65,7 @@ class AddFragment : Fragment() {
         if(validation){
             // Insert Data to Database
             val newData = ToDoData(
-                0,
+                0,     // ROOM database automatically increases this column.
                 mTitle,
                 mSharedViewModel.parsePriority(mPriority),
                 mDescription
